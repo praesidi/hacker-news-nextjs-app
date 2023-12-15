@@ -1,46 +1,48 @@
+import Link from 'next/link';
+
 export default function NavBar() {
 	return (
-		<nav className='flex justify-center items-center'>
+		<nav className='flex justify-center items-center mb-6'>
 			<ol className='flex gap-4'>
 				<li>
-					<a
-						href='#'
-						className='relative after:bg-black after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
+					<Link
+						href='/'
+						className='relative text-lg font-semibold text-gray-400  after:bg-orange-500 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
 					>
 						<span className=''>News</span>
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='relative after:bg-black after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
+					<Link
+						href='/latest'
+						className='relative text-lg font-semibold text-gray-400 after:bg-orange-500 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
 					>
 						<span>Latest</span>
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='relative after:bg-black after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
+					<Link
+						href='/ask'
+						className='relative text-lg font-semibold text-gray-400 after:bg-orange-500 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
 					>
 						<span>Ask</span>
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='relative after:bg-black after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
+					<Link
+						href='/show'
+						className='relative text-lg font-semibold text-gray-400 after:bg-orange-500 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
 					>
 						<span>Show</span>
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='relative after:bg-black after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
+					<Link
+						href='/jobs'
+						className='relative text-lg font-semibold text-gray-400 after:bg-orange-500 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
 					>
 						<span>Jobs</span>
-					</a>
+					</Link>
 				</li>
 			</ol>
 		</nav>
