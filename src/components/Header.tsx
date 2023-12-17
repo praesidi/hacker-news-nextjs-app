@@ -2,7 +2,7 @@ import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
 	return (
-		<header className='flex flex-col justify-center items-center my-3 relative'>
+		<header className='flex flex-col justify-center items-center w-full my-3 relative'>
 			<div className='flex justify-end w-full px-5 -mb-6'>
 				<ThemeToggle className={''} />
 			</div>

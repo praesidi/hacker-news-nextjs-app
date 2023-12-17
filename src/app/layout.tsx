@@ -22,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`flex flex-col bg-neutral-100 h-screen w-screen ${inter.className}`}
+				className={`flex flex-col items-center bg-neutral-100 h-screen w-screen ${inter.className}`}
 			>
 				<Header />
 				{children}
