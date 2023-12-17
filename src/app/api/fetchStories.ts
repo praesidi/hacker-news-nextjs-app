@@ -1,4 +1,4 @@
-export default async function getData(url: string) {
+export default async function fetchStories(url: string) {
 	try {
 		const ids = await fetchStoryIds(url);
 

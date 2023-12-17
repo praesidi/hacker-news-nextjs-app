@@ -1,7 +1,7 @@
 import NavBar from '@/components/NavBar';
 import PageTitle from '@/components/PageTitle';
 import StoriesContainer from '@/components/StoriesContainer';
-import getData from '../api/getData';
+import getData from '../api/fetchStories';
 
 export default async function Show() {
 	const data = await getData(
