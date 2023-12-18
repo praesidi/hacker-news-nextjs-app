@@ -6,6 +6,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Providers from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,13 +21,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
+		<html lang='en' suppressHydrationWarning>
 			<body
-				className={`flex flex-col items-center bg-neutral-100 h-screen w-screen ${inter.className}`}
+				className={`flex flex-col items-center bg-neutral-100 h-screen w-screen dark:bg-gray-800 ${inter.className}`}
 			>
-				<Header />
-				{children}
-				<Footer />
+				<Providers>
+					<Header />
+					{children}
+					<Footer />
+				</Providers>
 			</body>
 		</html>
 	);
