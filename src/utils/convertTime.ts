@@ -1,4 +1,4 @@
-const convertTime = (seconds: number) => {
+function convertTime(seconds: number) {
 	const timePassed = Math.round(Date.now() / 1000) - seconds;
 	const timeInMinutes = Math.round(timePassed / 60);
 	const timeInHours = Math.round(timeInMinutes / 60);
@@ -21,6 +21,6 @@ const convertTime = (seconds: number) => {
 	} else {
 		return `${timeInMinutes} minutes`;
 	}
-};
+}
 
 export default convertTime;

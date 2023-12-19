@@ -1,7 +1,7 @@
-import DOMPurify from 'dompurify';
+import { sanitize } from 'isomorphic-dompurify';
 
-const sanitizeText = (text: string) => {
-	return DOMPurify.sanitize(text);
-};
+function sanitizeText(text: string) {
+	return sanitize(text);
+}
 
 export default sanitizeText;

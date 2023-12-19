@@ -2,7 +2,7 @@ import NavBar from '@/components/NavBar';
 import PageTitle from '@/components/PageTitle';
 import StoriesContainer from '@/components/StoriesContainer';
 import StoryCard from '@/components/StoryCard';
-import getData from './api/getData';
+import getData from './api/fetchStories';
 
 export default async function Home() {
 	const data = await getData(
