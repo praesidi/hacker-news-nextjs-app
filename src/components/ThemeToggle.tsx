@@ -22,14 +22,14 @@ export default function ThemeToggle({ className }: { className: string }) {
 			{theme === 'light' ? (
 				<button
 					onClick={() => setTheme('dark')}
-					className='w-[24px] transition duration-300 ease-in-out text-xl'
+					className='w-[24px] transition duration-300 ease-in-out text-xl text-gray-700'
 				>
 					<FontAwesomeIcon icon={faSun} />
 				</button>
 			) : (
 				<button
 					onClick={() => setTheme('light')}
-					className='w-[24px] transition duration-300 ease-in-out text-xl'
+					className='w-[24px] transition duration-300 ease-in-out text-xl text-zinc-300'
 				>
 					<FontAwesomeIcon icon={faMoon} />
 				</button>

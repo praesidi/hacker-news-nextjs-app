@@ -23,7 +23,7 @@ export default function StoryCard({ data }: { data: Story }) {
 					</a>
 				</span>
 			</div>
-			<div className='flex gap-2 text-gray-500'>
+			<div className='flex gap-2 text-gray-400 dark:text-gray-600'>
 				<div className='flex items-center shrink-0'>
 					<FontAwesomeIcon icon={faStar} className='text-sm mr-0.5' />
 					{`${data.score} points`}
