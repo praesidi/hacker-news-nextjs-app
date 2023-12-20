@@ -21,7 +21,7 @@ export default function StoryCard({ data }: { data: Story }) {
 					<Link href={`/story/${data.id}`}>{data.title}</Link>
 				</span>
 				<span
-					className={`text-neutral-400 ml-1 transition duration-300 hover:text-neutral-500 dark:text-neutral-600 dark:hover:text-neutral-500 
+					className={`text-gray-400 ml-1 transition duration-300 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400 
 					${link === 'link not provided' ? 'pointer-events-none opacity-50' : ''}`}
 				>
 					<a href={data.url} target='_blank'>

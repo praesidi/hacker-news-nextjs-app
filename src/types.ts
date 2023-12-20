@@ -13,11 +13,12 @@ export interface Story {
 export interface Comment {
 	by: string;
 	id: number;
-	kids?: number[];
+	kids?: Comment[];
 	parent?: number;
 	text: string;
 	time: number;
 	type: string;
+	deleted?: boolean;
 }
 
 export interface Job {

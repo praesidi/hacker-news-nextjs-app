@@ -18,18 +18,15 @@ export default async function Story({ params }: { params: { id: string } }) {
 	const postTime = convertTime(data.time);
 	const link = data.url ? getShortLink(data.url) : 'link not provided';
 
-	// FIXME: fix text (tags are still shown)
-	// TODO: check if all comments returned
-
 	return (
 		<main className='max-w-[1200px] flex flex-col items-center justify-center px-8'>
 			<div className='flex justify-start items-center w-full my-5'>
 				<BackButton />
 			</div>
-			<h1 className='text-2xl font-bold text-gray-700 dark:text-gray-400'>
+			<h1 className='text-2xl font-bold text-gray-700 dark:text-gray-300'>
 				{data.title}
 			</h1>
-			<div className='flex gap-2 text-gray-400 dark:text-gray-600'>
+			<div className='flex gap-2 mb-5 text-gray-400 dark:text-gray-600'>
 				<div className='flex items-center shrink-0'>
 					<FontAwesomeIcon icon={faStar} className='text-sm mr-0.5' />
 					{`${data.score} points`}

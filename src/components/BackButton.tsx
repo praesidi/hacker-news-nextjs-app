@@ -8,7 +8,7 @@ export default function BackButton() {
 
 	return (
 		<button
-			className='border px-3 py-2 rounded-lg flex items-center transition duration-200 hover:shadow active:scale-95 dark:hover:shadow-md dark:hover:shadow-slate-500'
+			className='border px-3 py-2 rounded-lg flex items-center transition duration-200 border-gray-300 hover:shadow active:scale-95 dark:border-gray-600 dark:hover:shadow-slate-500'
 			onClick={() => router.back()}
 		>
 			<FontAwesomeIcon icon={faAngleLeft} className='text-lg mr-0.5' />
