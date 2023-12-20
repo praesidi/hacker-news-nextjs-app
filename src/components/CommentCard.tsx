@@ -8,21 +8,71 @@ export default function CommentCard({ data }: { data: Comment }) {
 	const sanitizedText = sanitizeText(data.text);
 	const time = convertTime(data.time);
 
-	// TODO: adjust colors for light and dark modes
+	// TODO: make gaps btw comments even
 
 	return (
-		<div className='border-l-2 rounded py-1 px-3 border-neutral-500'>
-			<div className='flex items-center gap-2 mb-1 font-light'>
-				<div>
-					<FontAwesomeIcon icon={faUser} className='mr-1 text-sm' />
-					<span className=''>{data.by}</span>
+		<>
+			<div className='border-l-2 rounded py-1 px-3 border-neutral-500'>
+				{data.deleted ? (
+					<DeletedComment time={time} />
+				) : (
+					<CommonComment user={data.by} time={time} text={sanitizedText} />
+				)}
+			</div>
+			{data.kids && data.kids.length > 0 ? (
+				<div className='flex flex-col gap-3 pl-5 py-1 border-l border-neutral-300 dark:border-gray-700'>
+					{data.kids.map((comment, index) => (
+						<CommentCard key={index} data={comment} />
+					))}
 				</div>
-				<div>
-					<FontAwesomeIcon icon={faClock} className='mr-1 text-sm' />
-					<span className=''>{`${time} ago`}</span>
+			) : null}
+		</>
+	);
+}
+
+function CommonComment({
+	user,
+	time,
+	text,
+}: {
+	user: string;
+	time: string;
+	text: string;
+}) {
+	return (
+		<>
+			<div className='flex items-center gap-2 mb-1 font-light'>
+				<div className='flex items-center'>
+					<FontAwesomeIcon icon={faUser} className='mr-1 text-sm' />
+					<span className='font-medium'>{user}</span>
+				</div>
+				<div className='flex items-center'>
+					<FontAwesomeIcon icon={faClock} className='mr-1 text-xs' />
+					<span className='text-sm'>{`${time} ago`}</span>
 				</div>
 			</div>
-			<div dangerouslySetInnerHTML={{ __html: sanitizedText }}></div>
-		</div>
+			<div
+				className='text-gray-800 dark:text-gray-300'
+				dangerouslySetInnerHTML={{ __html: text }}
+			></div>
+		</>
+	);
+}
+
+function DeletedComment({ time }: { time: string }) {
+	return (
+		<>
+			<div className='flex items-center gap-2 mb-1 font-light'>
+				<div className='flex items-center'>
+					<FontAwesomeIcon icon={faUser} className='mr-1 text-sm' />
+					<span className='font-medium'>unknown user</span>
+				</div>
+				<div className='flex items-center'>
+					<FontAwesomeIcon icon={faClock} className='mr-1 text-xs' />
+					<span className='text-sm'>{`${time} ago`}</span>
+				</div>
+			</div>
+			<div className='italic text-gray-400'>This comment has been deleted</div>
+		</>
 	);
 }
