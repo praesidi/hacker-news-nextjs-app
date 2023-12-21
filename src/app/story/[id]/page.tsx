@@ -23,10 +23,10 @@ export default async function Story({ params }: { params: { id: string } }) {
 			<div className='flex justify-start items-center w-full my-5'>
 				<BackButton />
 			</div>
-			<h1 className='text-2xl font-bold text-gray-700 dark:text-gray-300'>
+			<h1 className='text-2xl text-center font-bold text-gray-700 dark:text-gray-300'>
 				{data.title}
 			</h1>
-			<div className='flex gap-2 mb-5 text-gray-400 dark:text-gray-600'>
+			<div className='flex justify-center flex-wrap gap-2 mb-5 text-gray-400 dark:text-gray-600'>
 				<div className='flex items-center shrink-0'>
 					<FontAwesomeIcon icon={faStar} className='text-sm mr-0.5' />
 					{`${data.score} points`}
