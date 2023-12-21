@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.comment-text pre,
+.story-text pre {
+	@apply whitespace-pre-line opacity-60 border-l-4 py-1 pl-3 my-2 border-l-gray-300;
+}
+
+.comment-text a,
+.story-text a {
+	@apply underline decoration-dashed decoration-1 opacity-80 transition duration-300;
+}
+
+.comment-text a:hover,
+.story-text a:hover {
+	@apply text-orange-400;
+}
+
+.story-text p {
+	@apply py-1;
+}

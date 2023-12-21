@@ -79,7 +79,7 @@ function CommonComment({
 				</div>
 			</div>
 			<div
-				className='text-gray-800 dark:text-gray-300'
+				className='comment-text text-gray-800 dark:text-gray-300'
 				dangerouslySetInnerHTML={{ __html: text }}
 			></div>
 		</>
