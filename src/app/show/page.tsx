@@ -9,7 +9,7 @@ export default async function Show() {
 	);
 
 	return (
-		<main className='max-w-[1200px] w-full flex flex-col items-center justify-center'>
+		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center'>
 			<NavBar />
 			<PageTitle>Show</PageTitle>
 			<StoriesContainer data={data} />

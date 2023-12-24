@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer() {
 	return (
-		<footer className='mt-auto p-1 w-full pt-[40px] text-center'>
+		<footer className='mt-auto p-1 max-w-[1280px] w-full pt-[40px] text-center'>
 			design and code by{' '}
 			<a
 				href='https://github.com/praesidi'

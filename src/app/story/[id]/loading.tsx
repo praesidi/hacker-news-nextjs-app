@@ -2,7 +2,7 @@ import BackButton from '@/components/BackButton';
 
 export default function Loading() {
 	return (
-		<main className='max-w-[1200px] w-full flex flex-col items-center justify-center px-8'>
+		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-8'>
 			{/* back button */}
 			<div className='flex justify-start items-center w-full my-5'>
 				<div className='h-[42px] w-[80px] rounded-lg bg-gray-300 animate-pulse'></div>

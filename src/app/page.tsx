@@ -10,7 +10,7 @@ export default async function Home() {
 	);
 
 	return (
-		<main className='max-w-[1200px] flex flex-col items-center justify-center'>
+		<main className='max-w-[1280px] flex flex-col items-center justify-center'>
 			<NavBar />
 			<PageTitle>News</PageTitle>
 			<StoriesContainer data={data} />

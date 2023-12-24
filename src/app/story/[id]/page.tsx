@@ -19,7 +19,7 @@ export default async function Story({ params }: { params: { id: string } }) {
 	const link = data.url ? getShortLink(data.url) : 'link not provided';
 
 	return (
-		<main className='max-w-[1200px] w-full flex flex-col items-center justify-center px-8'>
+		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-4 sm:px-8'>
 			<div className='flex justify-start items-center w-full my-5'>
 				<BackButton />
 			</div>
