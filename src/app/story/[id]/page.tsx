@@ -60,8 +60,7 @@ export default async function Story({ params }: { params: { id: string } }) {
 				</div>
 			</div>
 			<StoryTextWrapper text={data.text} />
-			{/* only job posts don't have comment section */}
-			{data.type === 'job' ? <></> : <CommentTree data={data} />}
+			<CommentTree data={data} />
 		</main>
 	);
 }
