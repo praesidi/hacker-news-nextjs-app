@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	.word-break {
+		overflow-wrap: anywhere;
+		word-break: normal;
+	}
+}
+
+.story-text {
+	@apply word-break;
+}
+
 .comment-text pre,
 .story-text pre {
 	@apply whitespace-pre-line opacity-60 border-l-4 py-1 pl-3 my-2 border-l-gray-300;
