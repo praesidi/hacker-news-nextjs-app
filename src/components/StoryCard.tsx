@@ -15,7 +15,7 @@ export default function StoryCard({ data }: { data: Story }) {
 	const link = data.url ? getShortLink(data.url) : 'link not provided';
 
 	return (
-		<div className='w-4/5 mb-2'>
+		<div className='w-11/12 sm:w-4/5 mb-2'>
 			<div>
 				<span className='text-lg font-medium text-gray-600  transition duration-300 hover:text-orange-600 dark:text-gray-400 dark:hover:text-orange-500'>
 					<Link href={`/story/${data.id}`}>{data.title}</Link>
@@ -29,18 +29,18 @@ export default function StoryCard({ data }: { data: Story }) {
 					</a>
 				</span>
 			</div>
-			<div className='flex gap-2 text-gray-400 dark:text-gray-600'>
-				<div className='flex items-center shrink-0'>
+			<div className='flex flex-wrap text-gray-400 dark:text-gray-600'>
+				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faStar} className='text-sm mr-0.5' />
 					{`${data.score} points`}
 				</div>
 
-				<div className='flex items-center shrink-0'>
+				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faUser} className='text-sm mr-0.5' />
 					{data.by}
 				</div>
 
-				<div className='flex items-center shrink-0'>
+				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faClock} className='text-sm mr-0.5' />
 					{`${postTime} ago`}
 				</div>

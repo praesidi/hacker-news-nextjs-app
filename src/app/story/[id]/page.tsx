@@ -23,25 +23,25 @@ export default async function Story({ params }: { params: { id: string } }) {
 			<div className='flex justify-start items-center w-full my-5'>
 				<BackButton />
 			</div>
-			<h1 className='text-2xl text-center font-bold text-gray-700 dark:text-gray-300'>
+			<h1 className='text-2xl text-center font-bold mb-2 text-gray-700 dark:text-gray-300'>
 				{data.title}
 			</h1>
 			{/* story info */}
-			<div className='flex justify-center flex-wrap gap-2 mb-5 text-gray-400 dark:text-gray-600'>
-				<div className='flex items-center shrink-0'>
+			<div className='flex justify-center flex-wrap mb-5 text-gray-400 dark:text-gray-600'>
+				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faStar} className='text-sm mr-0.5' />
 					{`${data.score} points`}
 				</div>
-				<div className='flex items-center shrink-0'>
+				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faUser} className='text-sm mr-0.5' />
 					{`by ${data.by}`}
 				</div>
-				<div className='flex items-center shrink-0'>
+				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faClock} className='text-sm mr-0.5' />
 					{`${postTime} ago`}
 				</div>
 				{data.hasOwnProperty('descendants') && (
-					<div className='flex items-center shrink-0'>
+					<div className='flex items-center shrink-0 mr-1.5'>
 						<FontAwesomeIcon icon={faComments} className='text-sm mr-0.5' />
 						{data.descendants === 1
 							? `${data.descendants} comment`

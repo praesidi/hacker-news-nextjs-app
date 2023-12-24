@@ -1,6 +1,6 @@
 export default function Loading() {
 	return (
-		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-8'>
+		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-4 sm:px-8'>
 			<div className='h-6 w-[290px] mb-7 rounded bg-gray-300 dark:bg-gray-600 animate-pulse'></div>
 			<div className='h-8 w-[90px] mb-5 rounded bg-gray-300 dark:bg-gray-600 animate-pulse'></div>
 			<div className='w-full flex flex-col justify-center items-center gap-4'>

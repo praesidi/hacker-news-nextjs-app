@@ -1,14 +1,12 @@
-import BackButton from '@/components/BackButton';
-
 export default function Loading() {
 	return (
-		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-8'>
+		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-4 sm:px-8'>
 			{/* back button */}
 			<div className='flex justify-start items-center w-full my-5'>
 				<div className='h-[42px] w-[80px] rounded-lg bg-gray-300 dark:bg-gray-600 animate-pulse'></div>
 			</div>
 			{/* title */}
-			<div className='h-8 w-1/2 mb-1 bg-gray-300 dark:bg-gray-600 rounded animate-pulse'></div>
+			<div className='h-8 w-1/2 mb-4 bg-gray-300 dark:bg-gray-600 rounded animate-pulse'></div>
 			{/* story stats */}
 			<div className='h-6 w-1/3 mb-8 bg-gray-300 dark:bg-gray-600 rounded animate-pulse'></div>
 			{/* comments counter */}
