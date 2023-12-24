@@ -32,7 +32,7 @@ export default function StoryCard({ data }: { data: Story }) {
 			<div className='flex flex-wrap text-gray-400 dark:text-gray-600'>
 				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faStar} className='text-sm mr-0.5' />
-					{`${data.score} points`}
+					{data.score === 1 ? '1 point' : `${data.score} points`}
 				</div>
 
 				<div className='flex items-center shrink-0 mr-1.5'>
