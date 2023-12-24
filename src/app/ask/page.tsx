@@ -9,7 +9,7 @@ export default async function Ask() {
 	);
 
 	return (
-		<main className='max-w-[1200px] flex flex-col items-center justify-center'>
+		<main className='max-w-[1200px] w-full flex flex-col items-center justify-center'>
 			<NavBar />
 			<PageTitle>Ask</PageTitle>
 			<StoriesContainer data={data} />
