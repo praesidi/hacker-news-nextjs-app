@@ -68,8 +68,8 @@ function CommonComment({
 }) {
 	return (
 		<>
-			<div className='flex items-center gap-2 mb-1 font-light'>
-				<div className='flex items-center'>
+			<div className='flex items-center flex-wrap mb-1 font-light'>
+				<div className='flex items-center mr-2'>
 					<FontAwesomeIcon icon={faUser} className='mr-1 text-sm' />
 					<span className='font-medium'>{user}</span>
 				</div>
@@ -89,8 +89,8 @@ function CommonComment({
 function DeletedComment({ time }: { time: string }) {
 	return (
 		<>
-			<div className='flex items-center gap-2 mb-1 font-light'>
-				<div className='flex items-center'>
+			<div className='flex items-center flex-wrap mb-1 font-light'>
+				<div className='flex items-center mr-2'>
 					<FontAwesomeIcon icon={faUser} className='mr-1 text-sm' />
 					<span className='font-medium'>unknown user</span>
 				</div>
