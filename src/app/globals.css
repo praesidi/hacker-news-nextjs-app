@@ -20,7 +20,7 @@
 
 .comment-text a,
 .story-text a {
-	@apply underline decoration-dashed decoration-1 opacity-80 transition duration-300;
+	@apply underline decoration-dashed decoration-1 opacity-80 transition duration-300 break-all;
 }
 
 .comment-text a:hover,
