@@ -6,7 +6,7 @@ export default function NavBar() {
 			<ol className='flex gap-4'>
 				<li>
 					<Link
-						href='/'
+						href='/news'
 						className='relative text-lg font-semibold text-gray-400  after:bg-orange-500 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
 					>
 						<span className=''>News</span>
