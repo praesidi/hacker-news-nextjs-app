@@ -23,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<body
-				className={`flex flex-col items-center bg-neutral-100 h-screen w-screen dark:bg-gray-800 ${inter.className}`}
+				className={`flex flex-col items-center bg-neutral-100 h-screen w-screen max-w-full dark:bg-gray-800 ${inter.className}`}
 			>
 				<Providers>
 					<Header />
