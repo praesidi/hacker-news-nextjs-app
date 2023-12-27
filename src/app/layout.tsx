@@ -7,6 +7,7 @@ config.autoAddCss = false; /* eslint-disable import/first */
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Providers from './providers';
+import Updater from '@/components/Updater';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
 			>
 				<Providers>
 					<Header />
-					{children}
+					<Updater>{children}</Updater>
 					<Footer />
 				</Providers>
 			</body>
