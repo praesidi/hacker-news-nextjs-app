@@ -11,7 +11,7 @@ export default async function Latest() {
 	return (
 		<main className='max-w-[1280px] w-full flex flex-col items-center justify-center px-4 sm:px-8'>
 			<NavBar />
-			<PageTitle>Latest News</PageTitle>
+			<PageTitle>Latest</PageTitle>
 			<StoriesContainer data={data} />
 		</main>
 	);
