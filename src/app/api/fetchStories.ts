@@ -25,7 +25,7 @@ export default async function fetchStories(url: string) {
 
 async function fetchStoryIds(url: string) {
 	try {
-		const res = await fetch(url, { next: { revalidate: 600 } });
+		const res = await fetch(url);
 		const response = await res.json();
 
 		return response;
