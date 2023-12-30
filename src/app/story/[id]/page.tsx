@@ -34,7 +34,7 @@ export default async function Story({ params }: { params: { id: string } }) {
 				</div>
 				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faUser} className='text-sm mr-0.5' />
-					{`by ${data.by}`}
+					{`${data.by}`}
 				</div>
 				<div className='flex items-center shrink-0 mr-1.5'>
 					<FontAwesomeIcon icon={faClock} className='text-sm mr-0.5' />
